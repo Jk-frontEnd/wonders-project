@@ -1,0 +1,201 @@
+:root {
+    --rich-black: #0d0e14ff;
+    --raisin-black: #252933ff;
+    --hover: rgb(207, 152, 199);
+    --wenge: #60515cff;
+    --dim-gray: #777076ff;
+    --sec: #597d7cff;
+    --paynes-gray: #386775ff;
+    --dark-slate-gray: #20504eff;
+    --dark-green: #193d31ff;
+    --gunmetal: #17292bff;
+}
+
+body {
+    background-color: var(--dim-gray);
+    font-family: 'Indie Flower';
+    color: var(--rich-black);
+    font-size: 20px;
+}
+
+a {
+    color: var(--rich-black);
+    text-decoration: none;
+
+    transition: color 350ms ease-in-out;
+}
+
+.container {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    margin-right: auto;
+    transition: color 350ms ease-in-out;
+}
+
+.header-list {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+.header-list a:hover,
+.header-list a:focus,
+.logo:hover,
+.logo:focus {
+    color: var(--hover);
+}
+
+section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/**********section intro************/
+
+.intro-div {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+/**********section bout us************/
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-us h2 {
+    text-align: center;
+    font-size: 36px;
+}
+
+.bout-div {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.creator-card {
+    background-color: var(--dark-slate-gray);
+    padding: 16px;
+    border-radius: 16px;
+}
+
+.creator-card img {
+    border-radius: 16px;
+    border: 3px solid var(--rich-black);
+}
+
+.creator-card ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+/********read section***********/
+
+.choose-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.open-read {
+    transition: color 350ms ease-in-out;
+}
+
+.open-read:hover,
+.open-read:focus {
+    color: var(--hover);
+    text-decoration: underline;
+}
+
+.read h2 {
+    display: flex;
+    justify-content: center;
+}
+
+/*************
+Explore
+*************/
+
+.btn-div {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 32px;
+}
+
+.btn {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid var(--rich-black);
+    background: transparent;
+    color: var(--rich-black);
+    font-family: 'Indie Flower';
+    font-size: 16px;
+
+    transition: 350ms color, border ease-in-out;
+}
+
+.btn:hover,
+.btn:focus {
+    color: var(--hover);
+    border-color: var(--hover);
+}
+
+.ocs {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.char-img {
+    border: 2px solid var(--rich-black);
+    border-radius: 16px;
+}
+
+
+
+
+.show {
+    display: block;
+}
+
+.characters {
+    margin-top: 30px;
+    overflow: hidden;
+    background: none;
+}
+
+.oc-item {
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.card-char {
+    transition: 350ms scale ease-in-out;
+}
+
+.oc-item:hover .card-char {
+    scale: 1.1;
+}
